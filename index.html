@@ -3,28 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="light dark">
+  <meta name="color-scheme" content="only light">
   <title>archsys-solvers</title>
   <meta name="description" content="High-Performance Architecture-Aware Numerical Solvers in C++17">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <style>
     :root {
-      --bg-light: #ffffff;
-      --bg-dark: #0a0a0a;
-      --text-light: #0a0a0a;
-      --text-dark: #ededed;
-      --muted-light: #6b7280;
-      --muted-dark: #9ca3af;
-      --border-light: #e5e7eb;
-      --border-dark: #262626;
-      --shadow-light: rgba(10, 10, 10, 0.14);
-      --shadow-dark: rgba(0, 0, 0, 0.55);
-
-      --bg: var(--bg-light);
-      --text: var(--text-light);
-      --muted: var(--muted-light);
-      --border: var(--border-light);
-      --shadow: var(--shadow-light);
+      --bg: #ffffff;
+      --text: #0a0a0a;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --shadow: rgba(10, 10, 10, 0.14);
 
       /* Physics-based spring easing curve via CSS linear() */
       --spring-easing: linear(
@@ -34,27 +23,7 @@
         0.975 57.1%, 0.997 69.8%, 1.003 76.9%, 1.004 83.8%, 1
       );
 
-      color-scheme: light dark;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: var(--bg-dark);
-        --text: var(--text-dark);
-        --muted: var(--muted-dark);
-        --border: var(--border-dark);
-        --shadow: var(--shadow-dark);
-      }
-    }
-
-    @supports (color: light-dark(white, black)) {
-      :root {
-        --bg: light-dark(var(--bg-light), var(--bg-dark));
-        --text: light-dark(var(--text-light), var(--text-dark));
-        --muted: light-dark(var(--muted-light), var(--muted-dark));
-        --border: light-dark(var(--border-light), var(--border-dark));
-        --shadow: light-dark(var(--shadow-light), var(--shadow-dark));
-      }
+      color-scheme: only light;
     }
 
     * {
